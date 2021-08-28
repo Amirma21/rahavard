@@ -12,10 +12,10 @@
 
 :root {
     --mainBlue: #40ACF1;
-    --transparentBlue: rgba(64, 172, 241, 0.7);
+    --transparentBlue: #40acf1b3;
     --mainWhite: #FFFFFF;
     --mainBlack: #292F36;
-    --mainGrey: rgb(216, 214, 214);
+    --mainGrey: #f5f6f8;
     --mainYellow: #e3b505;
     --mainOrange: #ff9100;
 }
@@ -47,6 +47,7 @@ body {
     background-size: cover;
     background-position: center;
     clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+    background-attachment: fixed;
 }
 
 .header-text-up,
@@ -66,4 +67,28 @@ body {
     border-radius: 15px;
     background-color: var(--mainOrange);
     margin: 2rem 20rem 0 0;
+}
+
+
+/* ......end of header..... */
+
+.intro-title {
+    font-size: 2.8rem;
+}
+
+.intro-title-up {
+    background-color: var(--mainBlue);
+    padding: 0 20px;
+    clip-path: polygon(13% 0, 100% 0%, 89% 100%, 0% 100%);
+}
+
+.intro-description {
+    height: auto;
+    padding: 2rem;
+    background-color: var(--mainGrey);
+    border-radius: 15px;
+    text-align: justify !important;
+    line-height: 2.8rem;
+    font-size: 1.35em;
+    font-weight: normal;
 }
