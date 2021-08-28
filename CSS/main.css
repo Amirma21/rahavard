@@ -10,13 +10,14 @@
     font-weight: lighter;
 }
 
-root {
+:root {
     --mainBlue: #40ACF1;
     --transparentBlue: rgba(64, 172, 241, 0.7);
     --mainWhite: #FFFFFF;
     --mainBlack: #292F36;
     --mainGrey: rgb(216, 214, 214);
     --mainYellow: #e3b505;
+    --mainOrange: #ff9100;
 }
 
 body {
@@ -37,4 +38,32 @@ body {
 .nav-link {
     color: var(--mainBlack);
     font-size: 20px;
+}
+
+.height-max {
+    min-height: calc(100vh - 12vh);
+    background-image: url(/images/banner2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+}
+
+.header-text-up,
+.header-text-down {
+    color: var(--mainWhite);
+}
+
+.header-text-down {
+    font-size: 1.4rem;
+    padding: 15px;
+    border-right: .5rem solid var(--transparentBlue);
+    border-radius: 5px;
+}
+
+.btn-demo {
+    width: 12rem;
+    border-radius: 15px;
+    background-color: var(--mainOrange);
+    margin: 2rem 20rem 0 0;
 }
