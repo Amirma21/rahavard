@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "vazir";
+    src: url(/font/Vazir-Medium-FD-UI.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "vazir";
+    src: url(/font/Vazir-Regular-FD-UI.eot);
+    font-weight: lighter;
+}
+
+root {
+    --mainBlue: #40ACF1;
+    --transparentBlue: rgba(64, 172, 241, 0.7);
+    --mainWhite: #FFFFFF;
+    --mainBlack: #292F36;
+    --mainGrey: rgb(216, 214, 214);
+    --mainYellow: #e3b505;
+}
+
+body {
+    font-family: "vazir";
+    background: var(--mainWhite);
+    direction: rtl;
+}
+
+
+/** REM values to target root element 1REM = 16px */
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.nav-link {
+    color: var(--mainBlack);
+    font-size: 20px;
+}
