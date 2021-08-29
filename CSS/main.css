@@ -18,6 +18,7 @@
         --mainGrey: #f5f6f8;
         --mainYellow: #e3b505;
         --mainOrange: #ff9100;
+        --darkBlue: #091938;
     }
     
     body {
@@ -184,6 +185,42 @@
         box-shadow: rgba(0, 0, 0, 0.9) 5px 10px 10px -10px;
         padding: 1.1rem;
         font-size: 1.1rem;
+    }
+    
+    footer {
+        width: auto;
+        height: auto;
+        background-color: #091938;
+        margin: 0 auto;
+    }
+    
+    .contact p {
+        color: #fff;
+        margin-bottom: 5vh;
+        font-size: 1.75rem;
+    }
+    
+    .contact li {
+        margin-bottom: 3vh;
+    }
+    
+    .contact li i {
+        color: #7a7af0;
+        font-size: 28px;
+        margin-left: 10px;
+    }
+    
+    .contact li span {
+        color: #ada9a9;
+        font-size: 1rem;
+    }
+    
+    .copyright {
+        width: 100%;
+        border-top: 1px solid #ada9a9;
+        text-align: center;
+        color: #ada9a9;
+        padding: 10px;
     }
     
     @media screen and (max-width: 1200px) {
