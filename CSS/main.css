@@ -37,13 +37,16 @@
     .hidepreloader{
         display:none !important;
     }
-    
+       
  *{
         margin: 0%;
         padding: 0;
     }
     /** REM values to target root element 1REM = 16px */
     
+    #top-bar{
+        background-color: var(--mainWhite) !important;
+    }
     .logo {
         width: 60px;
         height: 60px;
