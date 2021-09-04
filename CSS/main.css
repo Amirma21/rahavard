@@ -9,6 +9,11 @@
         src: url(/font/Vazir-Regular-FD-UI.eot);
         font-weight: lighter;
     }
+
+    *{
+        margin: 0%;
+        padding: 0;
+    }
     
      :root {
         --mainBlue: #40ACF1;
@@ -19,6 +24,7 @@
         --mainYellow: #e3b505;
         --mainOrange: #ff9100;
         --darkBlue: #091938;
+        --secondaryBlue: #0d2d6e;
     }
     
     body {
@@ -34,17 +40,29 @@
         bottom: 0%;
         left: 0%;
     }
+
+    .progress-countainer{
+        width: 98%;
+        height: 8px;
+        background-color: var(--mainGrey) !important;
+       position: absolute;
+       top: calc(11.5vh - 5px);   
+       border-radius: 10px;
+    }
+    .progress-show{
+        width: 0;
+        height: 8px !important;
+        background: linear-gradient(to left, var(--mainBlue),var(--secondaryBlue));
+        border-radius: 10px;
+    }
     .hidepreloader{
         display:none !important;
     }
        
- *{
-        margin: 0%;
-        padding: 0;
-    }
+
     /** REM values to target root element 1REM = 16px */
     
-    #top-bar{
+    #top-nav{
         background-color: var(--mainWhite) !important;
     }
     .logo {
@@ -93,9 +111,10 @@
     }
     
     .intro-title-up {
+        color: var(--mainWhite);
         background-color: var(--mainBlue);
         padding: 0 20px;
-        clip-path: polygon(13% 0, 100% 0%, 89% 100%, 0% 100%);
+        clip-path: polygon(0 0, 82% 0, 95% 100%, 15% 100%);
     }
     
     .intro-description {
@@ -184,7 +203,11 @@
         padding: 2rem 0;
         background-color: var(--mainGrey);
     }
-    
+    .consultation-title{
+        background: var(--mainBlue);
+        color: var(--mainWhite);
+        border-radius: 20px;
+    }
     .form-btn {
         background: var(--mainBlue);
     }
