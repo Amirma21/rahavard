@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="la">
+<html lang="la" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -42,13 +42,28 @@
         <div class="collapse navbar-collapse header-nav" id="myNav">
             <ul class="navbar-nav mx-auto">
                 <li>
-                    <a href="#" class="nav-link active mx-3">خانه</a>
+                    <a href="#" class="nav-link btn btn-primary active mx-3">خانه</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link  mx-3">راهکارها</a>
+                    <div class="dropdown mx-2">
+                        <button id="my-dropdown" class="btn btn-light nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> راهکارها </button> 
+                        <div class="dropdown-menu p-2" aria-labelledby="my-dropdown">
+                            <a class="dropdown-item " href="#">سنسور دما</a>
+                            <a class="dropdown-item " href="#">مدیریت ناوگان</a>
+                            <a class="dropdown-item " href="#">ارتباط با شبکه CAN</a>
+                            <a class="dropdown-item " href="#"></a>
+                            <a class="dropdown-item " href="#"></a>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="#" class="nav-link mx-3">محصولات</a>
+                    <div class="dropdown">
+                        <button id="my-dropdown" class="btn btn-light nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> محصولات </button> 
+                        <div class="dropdown-menu p-2" aria-labelledby="my-dropdown">
+                            <a class="dropdown-item " href="#">سخت افزار</a>
+                            <a class="dropdown-item " href="#">نرم افزار</a>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <a href="#introduction" class="nav-link mx-3">درباره ما</a>
