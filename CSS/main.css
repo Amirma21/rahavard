@@ -13,6 +13,7 @@
     *{
         margin: 0%;
         padding: 0;
+        user-select: none;
 
     }
 
@@ -291,6 +292,7 @@
         color: #ada9a9;
         padding: 10px;
     }
+  
     
     @media screen and (max-width: 1200px) {
         .header-text-up {
