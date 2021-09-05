@@ -13,11 +13,17 @@
     *{
         margin: 0%;
         padding: 0;
+
     }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
     
      :root {
         --mainBlue: #40ACF1;
-        --transparentBlue: #40acf1b3;
+        --transparentBlue: #0a7dc5b3;
         --mainWhite: #FFFFFF;
         --mainBlack: #292F36;
         --mainGrey: #f5f6f8;
@@ -31,6 +37,7 @@
         font-family: "vazir";
         background: var(--mainWhite);
         direction: rtl;
+        transition:height .5s ease-in-out ;
     }
     
     .preloader {
@@ -40,6 +47,31 @@
         bottom: 0%;
         left: 0%;
     }
+    .go-up-btn{
+        width: 50px;
+        height: 50px;
+        background-color: var(--mainOrange);
+        border-radius: 10px;
+        position: fixed;
+        bottom: 30px;
+        right: 40px;
+        z-index: 999;
+        display: none;
+    }
+    .showBtn{
+        display: inline-block;
+    }
+
+    
+    .go-up-btn:hover{
+        background-color: var(--transparentBlue);
+    }
+
+    .go-up-btn::after {
+        content: "\005E";
+        color: #fff;
+        font-size: 2.5rem;
+      }
 
     .progress-countainer{
         width: 98%;
