@@ -76,15 +76,15 @@
 
     .progress-countainer{
         width: 98%;
-        height: 8px;
+        height: 4px;
         background-color: var(--mainGrey) !important;
        position: absolute;
-       top: calc(11.5vh - 5px);   
+       top:0;   
        border-radius: 10px;
     }
     .progress-show{
         width: 0;
-        height: 8px !important;
+        height: 4px !important;
         background: linear-gradient(to left, var(--mainBlue),var(--secondaryBlue));
         border-radius: 10px;
     }
@@ -107,6 +107,27 @@
     .nav-link {
         color: var(--mainBlack);
         font-size: 20px;
+    }
+    #my-dropdown{
+        border-radius: 20px;
+        padding: 10px;
+    }
+    #my-dropdown:hover{
+        background-color: var(--mainGrey);
+    }
+    .dropdown-text{
+        margin-left: 5px !important;
+    }
+    .dropdown-menu{
+        border-radius: 20px;
+       left: -30px;
+       margin-top :8px; 
+    }
+    .product{
+        left: -20px !important;
+    }
+    .dropdown-item{
+        text-align: center;
     }
     
     .height-max {
