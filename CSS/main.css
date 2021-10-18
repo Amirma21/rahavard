@@ -13,7 +13,7 @@
     *{
         margin: 0%;
         padding: 0;
-        user-select: none;
+      
 
     }
 
@@ -39,6 +39,7 @@
         background: var(--mainWhite);
         direction: rtl;
         transition:height .5s ease-in-out ;
+        overflow-x: hidden;
     }
     
     .preloader {
@@ -138,6 +139,22 @@
         background-position: center;
         clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
         background-attachment: fixed;
+        /* animation: zoom 30s 5s infinite; */
+    }
+    @keyframes zoom {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.1) translateX(-4%);
+        }
+        75%{
+            transform: scale(1.05) translateX(-3%);
+        }
+        100%{
+            transform: scale(1) translateX(0);
+        }
+        
     }
     
     .header-text-up,
@@ -339,6 +356,7 @@
             width: 8rem;
             margin: 1rem 12rem 0 0;
         }
+    
     }
     
     @media screen and (max-width: 768px) {
@@ -346,7 +364,9 @@
             font-size: 1rem;
         }
         .header-text-down {
-            font-size: 0.68rem;
+            font-size: .9rem;
+             text-align: center;
+             width: 80%;
         }
         .btn-demo {
             width: 7rem;
@@ -361,15 +381,21 @@
         .free-consultation {
             font-size: 1rem;
         }
+        .logo {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
     }
     
     @media screen and (max-width: 576px) {
         .header-text-up {
-            font-size: .8rem;
+            font-size: 1rem;
         }
         .header-text-down {
-            width: 45%;
+            width: 42%;
             line-height: 25px;
+            text-align: center;
         }
         .btn-demo {
             width: 6rem;
@@ -380,5 +406,14 @@
         input {
             font-size: .57rem;
             padding: 0.8rem;
+        }
+        .logo {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+        .intro-description span{
+            font-size: 14px;
+            line-height: 0.6rem;
         }
     }
